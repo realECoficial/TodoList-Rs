@@ -3,10 +3,8 @@ use users::{get_user_by_uid, get_current_uid};
 use chrono::prelude::*;
 use chrono::Weekday::*;
 use std::collections::HashMap;
-use chrono::WeekdaySet;
 
 
-const MTWRFSU: [char; 7] = ['M', 'T', 'W', 'R', 'F', 'S', 'U'];
 
 fn current_time(){
     let dt1: DateTime<Local> = Local::now();
