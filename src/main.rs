@@ -34,7 +34,7 @@ fn main()  {
     
     //TODO tengo hacer un match que tome el dia y segun eso, actualizar la visibilidad de las tareas
    //eje: lunes: rust = 1 matematicas = 1 filosofia = 0
-     
+    //LISTO     
     week_days(&mut letters);
 
     let user = get_user_by_uid(get_current_uid()).unwrap();
@@ -44,7 +44,8 @@ fn main()  {
     println!("");
     println!("Estas son las cosas que tienes que hacer hoy: ");
     println!("");
-     
+    // TODO hacer un archivo 'cache' solo para verificar que la tarea fue hecha.
+    // ejejm : existe archivo Filosofia? == si entonces su valor sera 0.
     for (key, value) in &letters {
         if *value != 0 {
             println!("\tTask: {}", key);
